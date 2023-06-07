@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comparador de ingresos Colombia</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-image: url('https://github.com/Irken-I/Salarios/blob/main/backGround2.jpg?raw=true'); background-size: cover;">
+    <div class="container">
+        <h1>Comparador de ingresos Colombia</h1>
+        <p>Escriba su ingreso mensual en pesos colombianos:</p>
+        <input type="number" id="incomeInput" min="0" placeholder="Su ingreso mensual">
+        <button onclick="compareIncome()">Comparar</button>
+        <p id="result"></p>
+        <p id="percentage"></p>
+        <div id="densityPlot"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
